@@ -3,18 +3,20 @@ description: |
   Triages new and reopened issues by assessing completeness, setting issue type
   and priority labels, finding duplicates, and posting a concise maintainer-facing
   report with actionable next steps.
-
-on:
+model: gpt-5-mini
+"on":
   issues:
-    types: [opened, reopened]
+    types:
+      - opened
+      - reopened
   reaction: eyes
-
 permissions:
   contents: read
-  issues: read
-
   copilot-requests: none
+  issues: read
 safe-outputs:
+  add-comment:
+    max: 1
   add-labels:
     allowed:
       - bug
@@ -28,13 +30,10 @@ safe-outputs:
       - invalid
       - spam
     max: 4
-  add-comment:
-    max: 1
   set-issue-type:
     max: 1
-
-timeout-minutes: 10
 source: githubnext/agentics/workflows/issue-triage.md@139fa09ef17cde4135e696ff8e7af09bc5ddfa6e
+timeout-minutes: 10
 ---
 
 # Issue Triage Assistant
