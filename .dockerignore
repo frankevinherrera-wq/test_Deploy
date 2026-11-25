@@ -1,0 +1,28 @@
+
+# Archivos generados por .NET
+**/bin/
+**/obj/
+
+# Git
+.git/
+.gitignore
+
+# Editores
+.vs/
+.vscode/
+
+# Resultados de pruebas
+**/TestResults/
+
+# Archivos temporales
+*.user
+*.suo
+*.tmp
+
+# Secretos locales
+.env
+.env.*
+!.env.example
+
+# Configuración específica de desarrollo
+appsettings.Development.json
