@@ -6,4 +6,4 @@ services:
     region: oregon
 
     image:
-      url: ghcr.io/frankevinherrera-wq/prueba_render:latest
+      url: ghcr.io/frankevinherrera-wq/test_deploy:latest
