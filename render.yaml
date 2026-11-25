@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: prueba-render
+    name: pecausa_2
     runtime: image
     plan: free
     region: oregon
