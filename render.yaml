@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: prueba-render
+    runtime: image
+    plan: free
+    region: oregon
+
+    image:
+      url: ghcr.io/frankevinherrera-wq/prueba_render:latest
