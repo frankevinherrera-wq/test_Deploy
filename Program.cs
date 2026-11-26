@@ -4,12 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Servicios
 builder.Services.AddOpenApi();
 
-
-
-
 var frontendUrl = builder.Configuration["FrontendUrl"];
-
-
 
 // Configuración CORS
 builder.Services.AddCors(options =>
@@ -34,7 +29,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // Habilitar CORS
-app.UseCors("ReactFrontend");
+app.UseCors("Frontend");
 
 var summaries = new[]
 {
